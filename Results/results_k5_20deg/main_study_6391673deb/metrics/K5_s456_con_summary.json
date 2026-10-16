@@ -1,0 +1,22 @@
+{
+  "K": 5,
+  "seed": 456,
+  "condition": "Constrained",
+  "condition_code": "con",
+  "epochs_run": 188,
+  "stop_epoch": 184,
+  "reached_theta": true,
+  "theta_stop": 0.02,
+  "loss_t0": 0,
+  "eval_t0": 0,
+  "theta_hi": 0.183806,
+  "train_mse": 0.0194514315914024,
+  "validation_mse": 0.019314453435631897,
+  "test_mse": 0.01953647643676959,
+  "mean_abs_pearson_r": 0.0022553883211009237,
+  "mean_signed_pearson_r": 0.0022553883211009237,
+  "corr_penalty_sum": 0.022553883211009238,
+  "model_file": "results_k5_20deg/main_study_6391673deb/models/K5_s456_con.pt",
+  "run_file": "results_k5_20deg/runs_6391673deb/K5_s456_con.pkl",
+  "hidden_file": "results_k5_20deg/hidden_6391673deb/K5_s456_con.npz"
+}

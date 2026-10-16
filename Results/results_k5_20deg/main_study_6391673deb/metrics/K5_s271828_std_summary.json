@@ -1,0 +1,22 @@
+{
+  "K": 5,
+  "seed": 271828,
+  "condition": "Control",
+  "condition_code": "std",
+  "epochs_run": 35,
+  "stop_epoch": 31,
+  "reached_theta": true,
+  "theta_stop": 0.02,
+  "loss_t0": 0,
+  "eval_t0": 0,
+  "theta_hi": 0.183806,
+  "train_mse": 0.01993782709461528,
+  "validation_mse": 0.019797152553040247,
+  "test_mse": 0.020003961340989918,
+  "mean_abs_pearson_r": 0.7062503417380952,
+  "mean_signed_pearson_r": 0.7062503417380952,
+  "corr_penalty_sum": 7.0625034173809516,
+  "model_file": "results_k5_20deg/main_study_6391673deb/models/K5_s271828_std.pt",
+  "run_file": "results_k5_20deg/runs_6391673deb/K5_s271828_std.pkl",
+  "hidden_file": "results_k5_20deg/hidden_6391673deb/K5_s271828_std.npz"
+}

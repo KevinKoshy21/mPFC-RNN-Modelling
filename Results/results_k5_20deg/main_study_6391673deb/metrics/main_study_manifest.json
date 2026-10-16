@@ -1,0 +1,17 @@
+{
+  "cfg_hash": "6391673deb",
+  "K_main": 5,
+  "spacing_deg": 20.0,
+  "n_seeds": 10,
+  "conditions": [
+    "Control",
+    "Constrained"
+  ],
+  "theta_stop": 0.02,
+  "theta_hi": 0.183806,
+  "theta_source": "pinned by hand",
+  "models_dir": "results_k5_20deg/main_study_6391673deb/models",
+  "results_csv": "results_k5_20deg/main_study_6391673deb/metrics/main_study_results.csv",
+  "loss_history_csv": "results_k5_20deg/main_study_6391673deb/metrics/main_study_loss_history.csv",
+  "correlations_csv": "results_k5_20deg/main_study_6391673deb/metrics/main_study_correlations.csv"
+}
