@@ -4,9 +4,16 @@ This repository contains a computational study comparing Vanilla recurrent neura
 
 ## Overview
 
-This repository contains a computational study comparing a standard recurrent neural network with a constrained recurrent neural network.
+## Architecture and Training
 
-Both networks learn to reproduce multiple two-dimensional behavioral trajectories. The constrained model additionally uses a correlation-based penalty to reduce similarity between hidden activity patterns associated with different trajectories.
+The models are recurrent neural networks with a three-channel input representing fixation, cosine, and sine directional cues. Each network contains a 200-unit recurrent hidden layer and produces two-dimensional trajectory outputs.
+
+The recurrent dynamics use leaky integration with an integration step of `0.2`, recurrent state noise with amplitude `0.2`, and a recurrent connectivity density of `0.8`. Noise remains enabled during evaluation to match the model's intended stochastic dynamics.
+
+The Control model is trained using trajectory-reproduction loss only. The Constrained model adds a correlation penalty on direction-specific hidden activity, weighted by `alpha = 1.0`. Both models are trained with Adam using a learning rate of `0.001`, a batch size of `2000`, and gradient clipping at `0.2`.
+
+The main experiment uses five trajectories separated by 20 degrees and ten matched random seeds. Training stops when the validation loss reaches `0.06` for five consecutive epochs, with a maximum of `2500` epochs for the five-trajectory condition. The data use a 10% validation split and a 20% test split.
+
 
 The notebook trains both models across multiple random seeds and evaluates:
 
