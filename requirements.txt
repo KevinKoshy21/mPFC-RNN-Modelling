@@ -1,0 +1,10 @@
+# Tested with Python 3.13 and the versions in brackets.
+numpy>=1.26        # [2.5.3]
+scipy>=1.11        # [1.18.1]
+pandas>=2.0        # [3.0.5]
+matplotlib>=3.8    # [3.11.2]
+torch>=2.1         # [2.14.1]
+colorcet>=3.0      # [3.2.1]
+jupyter            # notebooks; nbconvert [7.17.2] to run them headless
+# optional, only for the penalty check against the memory-based RNN in tests/parity_with_original.py
+# tensorflow-cpu   # [2.21.0]
